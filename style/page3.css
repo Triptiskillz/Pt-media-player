@@ -1,0 +1,585 @@
+@import"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import"https://www.w3schools.com/w3css/4/w3.css";
+@import"https://fonts.googleapis.com/css?family=Lato";
+*{
+    box-sizing: border-box;
+}
+/* Footer */
+  .footer {
+    padding: 20px;
+    text-align: left;
+    /*background-color: #d1d1d1d1;*/
+    margin-top: 20px;
+  }
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0px;
+        padding: 0px;
+        background-color: #020202;
+        color: #ddd;
+    }
+    .nametop{
+        margin-top: 10px;
+        margin-left:42%;
+        font-size:200%;
+    }
+    .avatar {
+        vertical-align: middle;
+        width: 70px;
+        height: 70px;
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+        margin-left: 250px;
+        float:down;    
+    }
+    .avatar:hover {background-color: #ddd;}
+    .avatar:active {
+        background-color: none;
+        box-shadow: 0 1px #666;
+        transform: translateY(2px);
+    }/*
+    .lower{
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }*/
+    .topnav {
+        margin-left:39%;
+        margin-right:38%;
+        /*margin-right:220px;*/
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 320px;
+        
+        /*background-color: blue;*/
+        overflow-x: hidden;
+      
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #2196F3;
+      color: white;
+    }
+    
+    .topnav .search-container {
+      float: right;
+    }
+    
+    .topnav input[type=text] {
+      padding: 3px;
+      height: 32px;
+      margin-top: 7px;
+      font-size: 20px;
+      border: none;
+       
+    }
+    
+    .topnav .search-container button {
+      float: right;
+      height: 32px;
+      padding: 6.5px 10px;
+      margin-top: 7px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+    
+
+    .leftup{
+        width: 300px;
+        height: auto;
+        background-color: #111111;
+    
+        align-items: center;
+        justify-content: center;
+    }
+    .left{
+        background-color: #111111;
+
+        top: 50px;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .left img{
+        width: 25%;
+        display: block;
+        padding: 1px;
+        float: left;
+    }
+    /*
+    .main{
+        width: 60%;
+        height: ;
+        margin-left: 20%;
+        padding: 10px;
+        background-color: blue;
+        float: left;
+    }*/
+    .row {
+        margin: 5px;
+    }
+      /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+        padding: 3px;
+    }
+      /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+        height: 450px;
+        display: none; /* Hide all elements by default */
+        position: relative;      /*here*/
+    }
+      /* Clear floats after rows */ 
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .content {
+        width: 100%;
+        background-color: black;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border: 1px dashed #222;
+        transition: 5s;
+    }
+    .content:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    }
+    .container {
+        position: relative;
+        width: 100%;
+    }
+    .container:hover .overlay {
+        opacity: 0.8;
+    }
+    .image2{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 25%;
+        width: 25%;
+        opacity: 0;
+        transition: .3s ease;
+    }
+    .icon {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 25%);
+        -ms-transform: translate(-50%, 25%);
+        text-align: center;
+        justify-items: center;
+    } 
+    .sample:hover {
+        color: #ddd;
+    }
+    .checked {
+        color: orange;
+    }
+
+    .right{
+        background-color: white;
+        top: 768px;
+        left: 0px;
+        width: 20%;
+        height: 720px;
+        position fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        float: left;
+    }
+    .right img{
+        width: 50%;
+        display: block;
+        margin-bottom: 30px;
+    }/*
+    .block{
+        width: 900px;
+        height: 450px;
+        position: fixed;
+        margin: 50px;
+        margin-top: 50px;
+        padding: 10px;
+    }*/
+    .container2{
+        width: 660px;
+        height: 450px;
+        background-color: #111111;
+        color: white;
+        margin-top: 60px;
+        margin-left: 350px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-style: inherit;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 1px inherit #bbbb;
+        position: relative;
+        float: bottom;
+    }
+    .player{
+        width: 640px;
+        height: 360px;
+        position: absolute;
+        background-color: black;
+        float: bottom;
+    }
+    #video{
+        width: 640px;
+        height: 360px;
+    }
+    .pre-controls{
+        width: 640px;
+        height: auto;
+        margin: 0px;
+        padding:0px;
+        position: relative;
+        float: bottom;
+    }
+    .controls{
+        width: 640px;
+            height: 50px;
+            margin: 0px;
+        color: #aaaaaa;
+        padding:0px;
+        position: relative;
+        font-size: 35px;
+        float: left;
+    }
+    .pro-time{
+        width: 400px;
+        height: 20px;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+    }
+    .progress-bar{
+        width: 400px;
+        height: 17px;
+        background-color: #ddd;
+        border: 1px solid #cccccc;
+        /*float: left;*/
+    }
+    .progress{
+        width: 0px;
+        height: 15px;
+        background-color: black;
+    }
+    #time{
+        width: auto;
+        height: 5px;
+        font-size: large;
+        margin-left: 315px;
+        float:bottom;
+    }
+    .ic{
+        margin-right: 15px;
+        
+        float: left;
+    }
+    #volume-slider{
+        -webkit-appearance: none;
+        position: absolute;
+        transform: rotate(270deg);
+        margin-left: 520px;
+        margin-top: -20px;
+        border-radius: 20px;
+        top = -40px;
+        left = -22px;
+        width: 80px;
+        height: 5px;
+        background:white;
+        box-shadow: 0px 0px 5px red;
+    }
+    #volume-slider::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        width: 15px;
+        box-shadow: 0px 0px 5px black;
+        background: #bbbbbb  ;
+        border-radius: 50%;
+    }
+    #volume-slider:focus{
+        outline: none;
+    }
+    .song-info{
+        width: 660px;
+        height: auto;
+        margin-left: 350px; 
+        background-color: #111111;
+        opacity: 0.9;   
+        border: 1px inherit #eeeeee;
+        border-style: inherit;  
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .song-info:hover{
+        opacity: 1.0;
+    }
+    #song-desc{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        color: white;
+    }
+
+
+@media screen and (max-width: 450px) {
+    body{
+        
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .avatar {
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+        margin-left: 10px;
+        float:bottom;    
+    }
+    .avatar:hover {background-color: #ddd;}
+    .avatar:active {
+        background-color: none;
+        box-shadow: 0 1px #666;
+        transform: translateY(2px);
+    }
+    .nametop{
+        vertical-align: middle;
+        text-align: center;
+        margin-left:30%;
+        font-size:200%;
+    }
+    .leftup{
+        width: 300px;
+        height: auto;
+        background-color: #111111;
+        align-items: center;
+        justify-content: center;
+    }
+    .left{
+        background-color: #111111;
+        margin-top:650px;
+        top: 50px;
+        left: 0px;
+        width: 300px;
+        height: auto;
+        float: left;
+    }
+    .left img{
+        width: 25%;
+        display: block;
+        padding: 1px;
+        float: left;
+    }
+    /*
+    .main{
+        width: 60%;
+        height: ;
+        margin-left: 20%;
+        padding: 10px;
+        background-color: blue;
+        float: left;
+    }*/
+    .row {
+        margin: 5px;
+    }
+      /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+        padding: 3px;
+    }
+      /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+        height: 450px;
+        display: none; /* Hide all elements by default */
+        position: relative;      /*here*/
+    }
+      /* Clear floats after rows */ 
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .content {
+        width: 100%;
+        background-color: black;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border: 1px dashed #222;
+        transition: 5s;
+    }
+
+
+
+
+
+
+    .container2{
+        width: 90%;
+        height: 350px;
+        background-color: #111111;
+        color: white;
+        margin-top: 30px;
+        margin-left: 5%;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-left: 2.5%;
+        padding-right:2.5%;
+        border-style: inherit;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 1px inherit #bbbb;
+        position: relative;
+        float: bottom;
+    }
+    
+    .player{
+        width: 95%;
+        height: 247.5px;
+        position: absolute;
+        background-color: black;
+        float: bottom;
+    }
+    #video{
+        width:100%;
+        height: 247.5px;
+        position: absolute;
+        float: bottom;
+    }
+    .controls{
+        width: 100%;
+        height: 20px;
+        margin: 0px;
+        margin-top: 247.5;
+        color: #aaaaaa;
+        font-size: 18px;
+        padding:0px;
+        position: relative;
+        float: left;
+    }
+    .pro-time{
+        width: 250px;
+        height: 20px;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+    }
+    .progress-bar{
+        width: 250px;
+        height: 17px;
+        background-color: #ddd;
+        /*border: 1px solid #cccccc;
+        /*float: left;*/
+    }
+    .progress{
+        width: 0px;
+        height: 15px;
+        background-color: black;
+    }
+    #time{
+        width: auto;
+        height: 5px;
+        font-size: medium;
+        margin-left: 170px;
+        float:bottom;
+    }
+    .ic{
+        margin: 3px;
+        float: left;
+    }
+    #volume-slider{
+        -webkit-appearance: none;
+        position: absolute;
+        transform: rotate(270deg);
+        margin-left: 365px;
+        margin-top: -20px;
+        border-radius: 20px;
+        /*top : -40px;
+        left : -22px;*/
+        width: 80px;
+        height: 5px;
+        background:white;
+        box-shadow: 0px 0px 5px red;
+    }
+    #volume-slider::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        width: 15px;
+        box-shadow: 0px 0px 5px black;
+        background: #bbbbbb  ;
+        border-radius: 50%;
+    }
+    #volume-slider:focus{
+        outline: none;
+    }
+    .song-info{
+        width: 100%;
+        height: auto;
+        margin-left: 0px; 
+        background-color: #111111;
+        opacity: 0.9;   
+        padding: -50px;
+        border: 1px inherit #eeeeee;
+        border-style: inherit;  
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .song-info:hover{
+        opacity: 1.0;
+    }
+    #song-desc{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        color: white;
+    }
+}
